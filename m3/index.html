@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Draggable Dual-View Slideshow</title>
+		<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
+		<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+  		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/HoverEffectIdeas/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19332"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header id="header" class="codrops-header">
+<!-- 		 		<h1>Draggable Dual-View Slideshow</h1>
+ -->			<span class="message">This mobile version does not have the slideshow switch</span>
+				<button class="slider-switch">Switch view</button>
+			</header>
+			<div id="overlay" class="overlay">
+				<div class="info">
+					<h2>Demo interactions</h2>
+					<span class="info-drag">Drag Sliders</span>
+					<span class="info-keys">Use Arrows</span>
+					<span class="info-switch">Switch view</span>
+					<button>Got it!</button>	
+				</div>
+			</div>
+			<div id="slideshow" class="dragslider">
+				<section class="img-dragger img-dragger-large dragdealer">
+					<div class="handle">
+
+					    <div class="slide" data-content="content-0">
+						 	<div class="img-wrap"><img src="m3_album_may/hb.jpg" alt="img0"/></div>
+								
+							<h2>Happy Birthday<span></span></h2>
+							<button class="content-switch">Read more</button>
+						</div> 
+						<div class="slide" data-content="content-1">
+						<!-- 	<div class="img-wrap"><img src="img/1.jpg" alt="img1"/></div>
+						 -->	
+						 <h2>Welcome<span>I have prepared a small album for You</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-2">
+							<div class="img-wrap"><img src="m3_album_may/12may.jpg" alt="img2"/></div>
+							<h2>May 12 Second Day<span>This is our First click</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-3">
+							<div class="img-wrap"><img src="m3_album_may/12may_onlyme.jpg" alt="img2"/></div>
+							<h2>May 12. Sorry Only ME. <span>Got my Pic for putting in Facebook(Started working at AMAZON)</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+
+						<div class="slide" data-content="content-4">
+							<div class="img-wrap"><img src="m3_album_may/13may_you.jpg" alt="img2"/></div>
+							<h2>May 13. Your First Pic<span></span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-5">
+							<div class="img-wrap"><img src="m3_album_may/17may_last_night.jpg" alt="img2"/></div>
+							<h2>May 17. Last Day at Mariott <span></span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						
+						<div class="slide" data-content="content-6">
+							<div class="img-wrap"><img src="m3_album_may/21may_got_new_phone.jpg" alt="img2"/></div>
+							<h2>May 21 Got New Phone<span></span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-7">
+							<div class="img-wrap"><img src="m3_album_may/23may_starbucks_eve.jpg" alt="img2"/></div>
+							<h2>May 23 StarBucks<span>After continuous nagging from sanky we finally been to starbucks</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-8">
+							<div class="img-wrap"><img src="m3_album_may/23may_vitm_trip.jpg" alt="img2"/></div>
+							<h2>May 23 VITM<span>Sorry . This one is on me.</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-9">
+							<div class="img-wrap"><img src="m3_album_may/23may_your_fav_pic.jpg" alt="img2"/></div>
+							<h2>May 23 @starbucks<span>You Three</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-10">
+							<div class="img-wrap"><img src="m3_album_may/29may_db_schema_got_upset.jpg" alt="img2"/></div>
+							<h2>May 29. Schema<span>The day I was Silent.</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-11">
+							<div class="img-wrap"><img src="m3_album_june/2june_rajdhani_day.jpg" alt="img2"/></div>
+							<h2>June 2. Rajdhani<span>Finally after so many biryani we got proper food</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+					<div class="slide" data-content="content-12">
+							<div class="img-wrap"><img src="m3_album_june/5th_jun_bd.jpg" alt="img2"/></div>
+							<h2>Jun 5 Atul's B'day<span>Most Awaited Day for you.</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-13">
+							<div class="img-wrap"><img src="m3_album_june/5jun_awkward_pic_atulbday.jpg" alt="img2"/></div>
+							<h2>Jun 5. Awkward Pic <span>PS: You were looking at incoming call</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-14">
+							<div class="img-wrap"><img src="m3_album_june/5th_jun_25min_after.jpg" alt="img2"/></div>
+							<h2>Jun 5 . Mission Accompalished<span> Hard Work Paid Off. Atul's B'day Preparations </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+
+						<div class="slide" data-content="content-15">
+							<div class="img-wrap"><img src="m3_album_june/5th_jun_gifts.jpg" alt="img2"/></div>
+							<h2>Jun 5. Gifts <span> </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+
+						<div class="slide" data-content="content-16">
+							<div class="img-wrap"><img src="m3_album_june/6th_all.jpg" alt="img2"/></div>
+							<h2>Jun 6. Banerghatta National Park <span> Too much Confusion in the Morning</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-17">
+							<div class="img-wrap"><img src="m3_album_june/6th_jun_safari.jpg" alt="img2"/></div>
+							<h2>Jun 6, Safari Ride <span> This one was Worth</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						
+						<div class="slide" data-content="content-18">
+							<div class="img-wrap"><img src="m3_album_june/6thjun_twogirls.jpg" alt="img2"/></div>
+							<h2>June 6, Butterfly Park<span> Two Girls </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-19">
+							<div class="img-wrap"><img src="m3_album_june/13jun_best_pic.jpg" alt="img2"/></div>
+							<h2>June 13, Kormangla <span> One of the Best Pics </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+
+						<div class="slide" data-content="content-20">
+							<div class="img-wrap"><img src="m3_album_june/13jun_prost.jpg" alt="img2"/></div>
+							<h2>June 13, Prost Kormangala <span> Our Future Home </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-21">
+							<div class="img-wrap"><img src="m3_album_june/14jun_10d.jpg" alt="img2"/></div>
+							<h2> June 14, Wonderlaa <span> XD Theatre. </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-22">
+							<div class="img-wrap"><img src="m3_album_june/14jun_after_insanity.jpg" alt="img2"/></div>
+							<h2>14 June. Wonderlaa Ride <span> Not enough space for Sankarshan and My cocophonous Song. </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-23">
+							<div class="img-wrap"><img src="m3_album_june/14jun_red_devils.jpg" alt="img2"/></div>
+							<h2> 14 June. Three Devils <span> Racism . I was out because of different colored T-Shirt</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+					
+
+	<div class="slide" data-content="content-24">
+							<div class="img-wrap"><img src="m3_album_june/14jun_withatul.jpg" alt="img2"/></div>
+							<h2>June 14  Wonderlaa <span> One of the best Pics with Atul</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-25">
+							<div class="img-wrap"><img src="m3_album_june/14jun_wonderla.jpg" alt="img2"/></div>
+							<h2>June 14  Wonderlaa <span>Started out Journey in the Bus</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-26">
+							<div class="img-wrap"><img src="m3_album_june/21jun_sunday.jpg" alt="img2"/></div>
+							<h2>June 21. Sunday @Office <span> Atul was furious with our decision</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+				
+						<div class="slide" data-content="content-27">
+							<div class="img-wrap"><img src="m3_album_june/21jun_sunday_pool_atul_anggry.jpg" alt="img2"/></div>
+							<h2>June 21. Pool @Office <span> Healthy Competition in Pool. We Won</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-28">
+							<div class="img-wrap"><img src="m3_album_june/25jun_night_we_stayed.jpg" alt="img2"/></div>
+							<h2>June 25. NightOut<span> We finally had night out </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-29">
+							<div class="img-wrap"><img src="m3_album_june/26th_night_idea_hack.jpg" alt="img2"/></div>
+							<h2> June 26 @CCD <span> The night before Hackathon </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-30">
+							<div class="img-wrap"><img src="m3_album_june/28jun_hackathon.jpg" alt="img2"/></div>
+							<h2> June 27 Hackathon <span> 24 Hour Coding. </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+	
+							<div class="slide" data-content="content-31">
+							<div class="img-wrap"><img src="m3_album_july/4h_cubbon.jpg" alt="img2"/></div>
+							<h2> July 4, Last Weekend @Cubbon Park <span> Big Park. But Nothing is there </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-32">
+							<div class="img-wrap"><img src="m3_album_july/4thdaly.jpg" alt="img2"/></div>
+							<h2> July 4, Smoke House Daly <span> Sankarshan's Desire for Beef </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-33">
+							<div class="img-wrap"><img src="m3_album_july/4thjulyentertainment.jpg" alt="img2"/></div>
+							<h2>July 4, Entertaintment Store @MG Road <span> </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-34">
+							<div class="img-wrap"><img src="m3_album_july/4th_shot.jpg" alt="img2"/></div>
+							<h2>July 4, @HardRockCafe <span> Shot. </span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+
+						<div class="slide" data-content="content-36">
+							<div class="img-wrap"><img src="m3_album_july/8thjuly_7:21.jpg" alt="img2"/></div>
+							<h2> July 8 . Again Too Early 07:21<span> Major Changes in Code</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-37">
+							<div class="img-wrap"><img src="m3_album_july/the_final.jpg" alt="img2"/></div>
+							<h2>July 10. Last Day @amazon <span>The Final Picture</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+												<div class="slide" data-content="content-38">
+							<h2>So That's it <span>There were so many Photos .</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+
+
+
+
+
+	
+
+	
+						
+						
+					
+					</div>
+				</section><!-- /img-dragger-->
+				<!-- Content section -->
+				<section class="pages">
+                    <div class="content" data-content="content-0">
+						<h2>Lorem Waldy <span>Distilling design and other interesting methods</span></h2>
+					</div>
+
+					<div class="content" data-content="content-1">
+						<h2>HAPPY BIRTHDAY !!!  <span>A small start</span></h2>
+						<p>
+						First of All. Happy Birthday. I wish you remain happy forever whatever you wished to become you will achieve 
+						</p>
+						<p>Never thought that first day meeting (outside the hotel on 10th July) will last so long that I will be wishing you Happy Birthday this way. (unlike we wish friends Happy Birthday on whatsapp or facebook wall with two extra :D smiley). Really The Two months with you are unforgettable and each day is like a page in a book with so many memories. Maitreyee Mehta - You are a Wonderful Person. You are a source of Happiness in so many people lives. </p>
+						<p>
+							Here is small album of the beautiful journey we had. There may be several typos Please excuse me for that. There are hundreds of Photos which I haven't included. (Can't Able to Add more than 40 Photos in this Template :P)  
+						</p>
+						<p></p>
+						
+					</div>
+					<div class="content" data-content="content-2">
+						<h2> May 12, Second Day <span> Don't Know Why it took 2 days to get our First Pic </span></h2>
+						<p></p>
+							<p></p>
+								<p></p>
+						
+					</div>
+					<div class="content" data-content="content-3">
+						<h2>May 12, Only Me <span> I am first One to get Solo Pic </span></h2>
+						
+					</div>
+					<div class="content" data-content="content-4">
+						<h2>May 12, Your First Pic <span> Your First Pic in the the series of your selfies with us</span></h2>
+						
+					</div>
+					<div class="content" data-content="content-5">
+						<h2>May 17, Last Day at Mariott <span> Been Busy in Finding Rooms </span></h2>
+						<p>Saw So Many Hostels and Neither were suitable for us. Either because they were no Girls Hostel Around Those or No Boys Hostel. Seriously It would have been heaven if we have gotton a flat for 4 people. Nothing would be better than that </p>
+						<p>Let's see what happens next year. </p>
+						<p></p>
+
+					</div>
+					<div class="content" data-content="content-6">
+						<h2>21 May, Got New Phone <span>  </span></h2>
+						<p> Seriously Too Much with the old phone. Aur mujhe itni saari pics kaha le paata agar phone na hota toh.  </p>
+						<p></p>
+					</div>
+					<div class="content" data-content="content-7">
+						<h2>23 May , Starbucks<span> Finally Sanky ka dream bhi poora hua</span></h2>
+						<p>You 3 took coffees and I haven't took any because whatever I haven't got a single penny left at that time.  </p>
+						<p></p>
+					</div>
+					<div class="content" data-content="content-8">
+						<h2>May 23, VITM Trip <span> This one's on me</span></h2>
+						<p>New to Bangalore. I saw the VITM Rating's are good and Cubbon Park is nearby so is UBCity</p>
+						<p>  </p>
+						<p></p>
+					</div>
+
+                 	<div class="content" data-content="content-9">
+						<h2> <span> </span></h2>
+						
+					</div>
+					<div class="content" data-content="content-10">
+						<h2> <span> </span></h2>
+						
+					</div>
+
+					<div class="content" data-content="content-11">
+						<h2>  <span> </span></h2>
+						
+					</div>
+					<div class="content" data-content="content-12">
+						<h2>  <span> </span></h2>
+						 
+					</div>
+					<div class="content" data-content="content-13">
+						<h2>  <span> </span></h2>
+						
+					</div>
+					<div class="content" data-content="content-14">
+						<h2>  <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-15">
+						<h2> <span> </span></h2>
+						
+					</div>
+						<div class="content" data-content="content-16">
+						<h2> <span></span></h2>
+						
+					</div>
+				
+				
+					<div class="content" data-content="content-17">
+						<h2> <span></span></h2>
+						
+					</div>
+
+					<div class="content" data-content="content-18">
+						<h2> <span> </span></h2>
+						
+					</div>
+					<div class="content" data-content="content-19">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-20">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-21">
+						<h2> <span> </span></h2>
+						
+					</div>
+					<div class="content" data-content="content-22">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-23">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-24">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-25">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-26">
+						<h2> <span></span></h2>
+						
+					</div>
+					
+
+						<div class="content" data-content="content-27">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-28">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-29">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-30">
+						<h2> <span></span></h2>
+						
+					</div>
+		<div class="content" data-content="content-31">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-32">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-33">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-34">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-35">
+						<h2> <span></span></h2>
+						
+					</div>
+
+				
+
+				<div class="content" data-content="content-36">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-37">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-38">
+						<h2> <span></span></h2>
+						
+					</div>
+					<div class="content" data-content="content-39">
+						<h2> <span>   </span></h2>
+						
+					</div>
+
+
+
+
+
+				</section>
+			</div>
+		</div><!-- /container --> 
+		<script src="js/dragdealer.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/dragslideshow.js"></script>
+		<script>
+			(function() {
+
+				var overlay = document.getElementById( 'overlay' ),
+					overlayClose = overlay.querySelector( 'button' ),
+					header = document.getElementById( 'header' )
+					switchBtnn = header.querySelector( 'button.slider-switch' ),
+					toggleBtnn = function() {
+						if( slideshow.isFullscreen ) {
+							classie.add( switchBtnn, 'view-maxi' );
+						}
+						else {
+							classie.remove( switchBtnn, 'view-maxi' );
+						}
+					},
+					toggleCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.add( header, 'hide' );
+						}
+					},
+					toggleCompleteCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.remove( header, 'hide' );
+						}
+					},
+					slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), { 
+						// toggle between fullscreen and minimized slideshow
+						onToggle : toggleBtnn,
+						// toggle the main image and the content view
+						onToggleContent : toggleCtrls,
+						// toggle the main image and the content view (triggered after the animation ends)
+						onToggleContentComplete : toggleCompleteCtrls
+					}),
+					toggleSlideshow = function() {
+						slideshow.toggle();
+						toggleBtnn();
+					},
+					closeOverlay = function() {
+						classie.add( overlay, 'hide' );
+					};
+
+				// toggle between fullscreen and small slideshow
+				switchBtnn.addEventListener( 'click', toggleSlideshow );
+				// close overlay
+				overlayClose.addEventListener( 'click', closeOverlay );
+
+			}());
+		</script>
+	</body>
+</html>
