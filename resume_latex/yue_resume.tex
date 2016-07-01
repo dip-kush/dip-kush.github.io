@@ -1,0 +1,282 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% Yisong Yue's resume
+%%   - based off work by Michael DeCorte 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%
+%% The following code sets up the document formatting
+%%
+
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line]{res_yy}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Deepak Kushwaha}
+
+%this is right aligned
+
+\address{
+Email: \href{mailto:dip.kush2008@gmail.com}{dip.kush2008@gmail.com} \ \ \ \ \ Contact No.: +91 9740841844  \ \ \  Website \href{dip-kush.github.io}{dip-kush.github.io} 
+}
+
+\begin{resume}
+
+
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+\section{\textsc{Objective}}
+
+To enhance my professional skills in a dynamic and stable workplace and to use my skills in the best possible way for achieving the organization’s goal.
+
+\iffalse
+Seeking a research/project assistantship that would give me a chance to widen my knowledge in my area of interest, apply my skills and build up research profile.
+\fi
+
+%\section{\textsc{Area of Interest}}
+%Pattern recognition and machine learning.
+
+\section{\textsc{Education}}
+
+\textbf{National Institute of Technology Karnataka, Surathkal} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2012 - 2016 \\
+B.Tech in Computer Science and Engineering    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CGPA : 8.12/10.0
+
+\textbf{Kendriya Vidyalaya, Mhow} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2010 - 2012 \\ 
+All India Senior Secondary Certificate Examination (Class XII) \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Score : 92\%
+
+\textbf{St. Francis Higher Secondary School, Pithampur
+} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2010 \\ 
+All India Secondary School Examination\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ CGPA : 9.6/10.0
+
+%%
+%% the meat of the resume starts now
+%%
+
+
+\section{\textsc{Technical Skills}}
+\textbf{Languages:}  C, JAVA, Python, Javascript, PHP(basic) \\
+\textbf{Frameworks and Platforms:}  Django(Python), Apache PIG, Apache SPARK \\
+\textbf{Databases:} MySql, DynamoDB \\
+
+
+
+\begin{formatb}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Work Experience}}
+
+\employer{\textbf{SDE Intern, Amazon India Development Center}}
+\title{Summer Intern}
+\location{Bangalore, IN}
+\dates{May 2015 -- July 2015}
+\begin{position}
+Was part of Machine Learning Team. Worked on \textbf{Visualization Tool for Mining
+Influential Products at Different Product Hierarchies}.
+\end{position}
+
+\employer{\textbf{Intern, TurtleYogi Technologies Pvt. Ltd}}
+\title{Summer Intern}
+\location{IIM Bangalore, IN}
+\dates{May 2014 -- June 2014}
+\begin{position}
+Worked on Moodle Plugin and Chrome Extension for Screen Sharing and Checking Packet Loss
+\end{position}
+
+
+
+% \employer{\textbf{Tap Pharmaceutical}}
+% \title{Web Programmer}
+% \location{Bannockburn, IL}
+% \dates{July 10\fourth , 2001 - August 15\fourth, 2001}
+% \begin{position}
+% Wrote an online help reference for a web-based Documentum
+% interface. Used Flash.
+% \end{position}
+
+
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%
+
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+%\section{\textsc{Online Course}}
+
+
+%\textbf{Probabilistic Systems Analysis 6.041} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MIT Opencourseware\\
+%\textbf{R Programming} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Johns Hopkins University\\
+%\textbf{Data Scientist's Toolbox} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Johns Hopkins University
+
+%%\section{\textsc{Previous Maths Courses}}
+%%
+%%\textbf{Engineering Mathematics I} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+%%\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ grade : 9/10 \\
+%%\textbf{Engineering Mathematics II} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ %%\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ grade : 10/10 \\
+%%\textbf{Mathematical Foundations in Information Technology} \\(Graph Theory and Probability Theory) \ \ \ \ \ \ %%\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  grade : 9/10 %%\\
+%%\textbf{Linear Algebra} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ %%\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \   grade : 10/10 %%\\
+
+\section{\textsc{Relevant Projects}}
+
+\employer{\href{https://github.com/dip-kush/workflow_validation_temp}{\textbf{Ajax Crawler}}}
+\dates{July 2015-Present}
+\begin{position}
+A crawler for crawling websites in Python with the capabilities of Crawling Ajax   
+Based Websites. The is a part of Final Year Major Project.
+\end{position}
+
+\employer{\href{https://github.com/dip-kush/crypto_project}{\textbf{Implementation of WebRTC DataChannel}}}
+\dates{July 2015 – Dec 2015}
+\begin{position}
+As a part of Computer Network Project implementation of WebRTC DataChannel API for file sharing and chat messages.
+\end{position}
+
+
+\employer{\href{https://github.com/dip-kush/crypto_project}{\textbf{C Library for Big Numbers}}}
+\dates{Jan 2015 – April 2015}
+\begin{position}
+Developed a library for Big Numbers in C as a Number Theory and Cryptography                         Project.
+\end{position}
+
+\employer{\href{https://github.com/dip-kush/dbms_django_project}{\textbf{Research Paper Sharing Website}}}
+\dates{July 2014 – Nov. 2014 }
+\begin{position}
+Developed a Research Papers Sharing Website as a part of Database Curriculum
+Project. It is Built in Django (Python Framework) and uses MySQL as a Database.
+\end{position}
+
+\employer{\href{https://github.com/dip-kush/Money-Matters}{\textbf{Money Matters}}}
+\dates{}
+\begin{position}
+Developed an android application that simulates a library management system.
+\end{position}
+
+
+%%
+%% This section could also use more formatting, but looks ok, as is
+%%
+
+%\section{\textsc{Qualifications}}
+
+%\emph{Programming Languages}: \Cplusplus, \CSharp, Cg, HLSL, ARB assembly, SML, OCaML, PHP, MySQL, Java, Python, Perl, MIPS assembly
+
+%\emph{Libraries and Tools}: Vim, STL, DirectX, OpenGL, \LaTeX, GIMP, Adobe Suite, Macromedia Suite, MatLab, Mathematica, Microsoft Visual Studio, GCC, GDB
+
+
+%%
+%% Note that we're redefining the formatting
+%% We only have one row of information now, instead of two
+%%
+
+\section{\textsc{Achievements}}
+
+ 
+\begin{itemize}
+\item Secured All India Rank 5608 out of million students in AIEEE 2012.
+\item Secured under 1000 AIR Rank in IMO 2010 conducted by NSO.
+\item Recipient of Merit-Cum-Means Scholarship awarded by CBSE.
+\end{itemize}
+
+
+
+\section{\textsc{Extra Curricular Activites}}
+
+\begin{itemize}
+\item Chief Coordinator at Indian Society of Technical Education NITK Chapter.
+\item Coordinator of the Workshop Committee in the Technical Festival of the college.
+\item Member at Web Enthusiasts Club
+\item Won an Intra-District Level Chess Competition in School.
+\item Held a position of Literary Club Captain in 2009-2010 batch.
+\item Joint Convener of Web Committee of ENGINEER'14 a technical fest of our college
+\end{itemize}
+
+%\section{\textsc{References}}
+
+%\textbf{Dr. Santhosh George}\\
+%Professor\\
+%Department of Mathematics and Computational Sciences \\
+%National Institute of Technology Karnataka, Surathkal \\
+%Email ID : \href{mailto:sgeorge@nitk.ac.in}{sgeorge@nitk.ac.in}\\
+%Contact No. : +91 824 2473263\\
+
+%\textbf{Dr. P Sam Johnson}\\
+%Assistant Professor\\
+%Department of Mathematics and Computational Sciences \\
+%National Institute of Technology Karnataka, Surathkal \\
+%Email ID : \href{mailto:sam@nitk.ac.in}{sam@nitk.ac.in}\\
+%Contact No. : +91 824 2473261
+
+%%
+%% Nothing special here, just a normal table
+%%
+
+%\section{\textsc{Course Work}}
+%  \begin{tabular}{lllll}
+%  Information Networks   & \ \ & Machine Learning    & \ \ & Theory of Computation \\ 
+%  Computer Graphics      & \ \ & Machine Vision      & \ \ & Programming Languages \\
+%  Software Engineering   & \ \ & Algorithms          & \ \ & Artificial Intelligence     \\
+%  Operating Systems      & \ \ & Databases           & \ \ & Computer Architecture \\
+%  Numerical Methods      & \ \ & Graph Theory        & \ \ & Differential Equations      \\
+%  Probability Theory     & \ \ & Number Theory       & \ \ & Differential Geometry       \\
+%  Advanced Calculus      & \ \ & Abstract Algebra    & \ \ & Advanced Combinatorics   \\
+%  \end{tabular}
+
+
+\end{resume}
+\end{document}
