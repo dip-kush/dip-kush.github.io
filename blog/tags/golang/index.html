@@ -1,114 +1,127 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> Golang &middot; Steam - a minimal theme for Hugo </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>Golang &middot; Steam - a minimal theme for Hugo</title>
+    <meta name="author" content="John Doe">
+    <meta name="description" content="Your description of the blog">
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://dip-kush.github.io/blog/css/slim.css">
-<link rel="stylesheet" href="http://dip-kush.github.io/blog/css/highlight.min.css">
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <!-- RSS autodiscovery -->
+    
+    <link href="http://dip-kush.github.io/blog/tags/golang/index.xml" rel="alternate" type="application/rss+xml"
+    title="Steam - a minimal theme for Hugo" />
+    <link href="http://dip-kush.github.io/blog/tags/golang/index.xml" rel="feed" type="application/rss+xml"
+    title="Steam - a minimal theme for Hugo" />
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://dip-kush.github.io/blog/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://dip-kush.github.io/blog/css/screen.css">
+    <link rel="stylesheet" href="http://dip-kush.github.io/blog/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="http://dip-kush.github.io/blog/tags/golang/index.xml" rel="alternate" type="application/rss+xml" title="Steam - a minimal theme for Hugo" />
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://dip-kush.github.io/blog/">Steam - a minimal theme for Hugo</a></h1>
-  <p class="site-tagline"></p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
-      <li><a href="/blog/post/goisforlovers/">(Hu)go Template Primer</a></li>
-      
-      <li><a href="/blog/post/hugoisforlovers/">Getting Started with Hugo</a></li>
-      
-      <li><a href="">tutorials</a></li>
-       
-	  <li class="spacer">&ac;</li>
-  
-    </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="posts">
-         
-        <div class="post">
-          <h2 class="post-title"><a href="http://dip-kush.github.io/blog/post/goisforlovers/">(Hu)go Template Primer</a></h2>
-          <span class="post-date">Apr 2, 2014</span>
-		  
-			<span class="post-tags">
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/go">go</a>&nbsp;
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/golang">golang</a>&nbsp;
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/templates">templates</a>&nbsp;
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/themes">themes</a>&nbsp;
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/development">development</a>&nbsp;
-		  	
-		    </span>
-		  
-		  
-		  	<div class="summary">
-				Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates. This document is a brief primer on using go templates.
-				<a class="read-more" href="/blog/post/goisforlovers/">&hellip;</a>
-			</div>
-		  
-        </div>
-        
-        <div class="post">
-          <h2 class="post-title"><a href="http://dip-kush.github.io/blog/post/hugoisforlovers/">Getting Started with Hugo</a></h2>
-          <span class="post-date">Apr 2, 2014</span>
-		  
-			<span class="post-tags">
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/go">go</a>&nbsp;
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/golang">golang</a>&nbsp;
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/hugo">hugo</a>&nbsp;
-		  	
-			          #<a href="http://dip-kush.github.io/blog/tags/development">development</a>&nbsp;
-		  	
-		    </span>
-		  
-		  
-		  	<div class="summary">
-				Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture. Save it somewhere specific as we will be using it in the next step. More complete instructions are available at installing hugo Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now. Follow the following steps: Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands: git clone https://github.com/spf13/hugo cd hugo /path/to/where/you/installed/hugo server --source=./docs &gt; 29 pages created &gt; 0 tags index created &gt; in 27 ms &gt; Web Server is available at http://localhost:1313 &gt; Press ctrl+c to stop Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.
-				<a class="read-more" href="/blog/post/hugoisforlovers/">&hellip;</a>
-			</div>
-		  
-        </div>
-        
-      </div>
-      <div class="pagination">
-   
-</div>
-    </div>
-    <div class="footer">
-  
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-  
-</div>
+<body class="home-template">
 
-  </div>
-  <script src="http://dip-kush.github.io/blog/js/slim.js"></script>
-  
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://dip-kush.github.io/blog/">Steam</a></h1>
+	
+	
+	<h1 class="blog-subtitle">a minimal theme for <del>Ghost</del> Hugo</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/blog/post/goisforlovers/">(Hu)go Template Primer</a></li>
+      	
+        	<li class="nav nav-current"><a href="/blog/post/hugoisforlovers/">Getting Started with Hugo</a></li>
+      	
+        	<li class="nav nav-current"><a href="">tutorials</a></li>
+      	
+    </ul>
+</nav>
+
+
+    <main class="content" role="main">
+		
+
+<article class="preview">
+    <header>
+        <h1 class="post-title"><a href="http://dip-kush.github.io/blog/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
+        <div class="post-meta"><time datetime="02 April 2014">02 April 2014</time></div>
+    </header>
+    <section class="post-excerpt">
+        <a class="excerptlink" href="http://dip-kush.github.io/blog/post/hugoisforlovers/"><p>&hellip;</p></a>
+        <p class="readmore"><a href="http://dip-kush.github.io/blog/post/hugoisforlovers/">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
+    </section>
+</article>
+
+<article class="preview">
+    <header>
+        <h1 class="post-title"><a href="http://dip-kush.github.io/blog/post/goisforlovers/">(Hu)go Template Primer</a></h1>
+        <div class="post-meta"><time datetime="02 April 2014">02 April 2014</time></div>
+    </header>
+    <section class="post-excerpt">
+        <a class="excerptlink" href="http://dip-kush.github.io/blog/post/goisforlovers/"><p>&hellip;</p></a>
+        <p class="readmore"><a href="http://dip-kush.github.io/blog/post/goisforlovers/">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
+    </section>
+</article>
+
+        
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/spf13" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/spf13" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    <a href="http://dip-kush.github.io/blog/tags/golang/index.xml" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
+
+		<section class="copyright">&copy; 2016 <a href="http://dip-kush.github.io/blog/">John Doe</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://dip-kush.github.io/blog/js/index.js"></script>
+<script src="http://dip-kush.github.io/blog/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
 
 </body>
-
 </html>
