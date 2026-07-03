@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Harshibar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Deepak Kushwaha} \\ \vspace{5pt}
+    \small \faMapMarker* \hspace{2pt}\texttt{Seattle, WA} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \href{mailto:dip.kush2008@gmail.com}{\texttt{dip.kush2008@gmail.com}} \hspace{1pt} $|$
+    \hspace{1pt} \faLinkedin \hspace{2pt}\href{https://www.linkedin.com/in/deepakkush/}{\texttt{LinkedIn}} \hspace{1pt} $|$
+    \hspace{1pt} \faGithub \hspace{2pt}\href{https://github.com/dip-kush/}{\texttt{GitHub}}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+    Senior Software Development Engineer with 10+ years building Amazon's internal big data development platform for analytics and business data production. Lead platform services that let data engineers schedule, orchestrate, monitor, and recover Redshift and EMR workloads at scale, supporting \textbf{50K+ engineers} and \textbf{5M+ workflow executions/day}.
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Big Data Technologies, Amazon}{Mar. 2023 -- Present}
+      {Senior Software Development Engineer}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{\textbf{AI-Powered Operations Platform:} Led an Amazon Bedrock RAG platform for \textbf{30K+ developers}, automating root-cause analysis across \textbf{3M+ ETL executions/day} and reducing support by \textbf{50+ tickets/week}.}
+        \resumeItem{\textbf{Workflow Orchestration Platform:} Led redesign of Big Data Technologies' data pipeline and job orchestration platform, which schedules and executes \textbf{5M+ analytics jobs/day} for \textbf{50K+ Amazon data builders}; architected the scalable engine using an internal workflow service, EventBridge, DynamoDB, Kinesis, and queues for scheduling, retries, distributed state, and fault recovery.}
+        \resumeItem{Improved platform reliability from \textbf{99.0\% to 99.99\%} while leading a \textbf{5--6 engineer} cross-functional initiative, delivering a highly observable and extensible orchestration framework.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Big Data Technologies, Amazon}{Jul. 2019 -- Mar. 2023}
+      {Software Development Engineer II}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{\textbf{Dependency Management \& Data Completeness Platform:} Led redesign of Big Data Technologies' dependency platform powering \textbf{5M+ analytics workflow executions/day} with fine-grained dataset completeness and declarative execution dependencies.}
+        \resumeItem{Built a lineage and completeness platform aggregating \textbf{50M+ completeness events/day}, with optimized storage for low-latency dependency evaluation, blocking-dataset detection, workflow recovery, automated redrive, and end-to-end debugging.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon}{Jul. 2016 -- Jul. 2019}
+      {Software Development Engineer I / II}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Amazon Appstore Ingestion Platform:} Designed backend services for validating, processing, transcoding, and publishing Android application packages (APKs) submitted by external developers.}
+        \resumeItem{Built distributed ingestion workflows for secure onboarding and release pipelines, improving reliability, throughput, and developer experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology Karnataka (NITK), Surathkal}{2012 -- 2016}
+      {Bachelor of Technology in Computer Science \& Engineering}{Surathkal, India}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages} {: Java, Python, Kotlin, TypeScript}\vspace{2pt} \\
+     \textbf{Distributed Systems \& Cloud} {: Workflow Orchestration, Event-Driven Architecture, DynamoDB, Kinesis, EventBridge, Lambda, ECS, S3, Docker, Kubernetes}\vspace{2pt} \\
+     \textbf{AI \& Data Platforms} {: LLMs, Agentic AI, RAG, Amazon Bedrock, Apache Spark, Apache Iceberg, Redshift}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
